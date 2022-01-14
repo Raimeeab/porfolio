@@ -1,14 +1,13 @@
 <img alt="GitHub Followers" src="https://img.shields.io/github/followers/Raimeeab"> <img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/<reponame>">  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/pulls/detail/state/Raimeeab/<reponame>">  <img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed-raw/Raimeeab/<reponame>">  <img alt="Branch Check Main" src="https://img.shields.io/github/checks-status/RaimeeAb/<reponame>/main">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/<reponame>">
 
 
-# PROJECT NAME
+# Portfolio
 ---
 ## Table of Content 
 
 * [Description](#description)
 * [Technlogies](#technologies)
 * [Usage](#usage)
-* [Installation](#installation)
 * [Contributors](#contributors)
 * [License](#license)
 * [Contribution](#contribution)
@@ -19,15 +18,13 @@
 
 <a name="description"></a>
 ## 📝 Description
+This website is created to showcase my portfolio, which will host all my major projects and will allow future employers and clients to become more familiar with my work and skills. I built this website to set myself a part from other candidates for any future jobs I apply for. This website will solve the problem of having to send out my major projects as single URLs/ Repos as it conveniently contains all of them in the one space. The main aim is to demonstrate my ability to create a front-end React website. 
 
 Link to the [site]()
 
 <a name="technologies"></a>
 ## 🕹 Technologies used 
 
-
-<a name="installation"></a>
-## ⚙️ Installation 
 
 
 <a name="usage"></a>
