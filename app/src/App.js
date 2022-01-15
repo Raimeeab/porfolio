@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Projects from "./components/Projects";
 
 import "./App.css";
 
@@ -10,14 +11,13 @@ function App() {
   return (
     <div>
       <Router>
-      <Header />
+        <Header />
         <Switch>
           <Route exact path="/">
             <About />
           </Route>
           <Route path="/projects">
-            <h1>Projects to go here</h1>
-            {/* <Projects /> */}
+            <Projects />
           </Route>
           <Route path="/contact">
             <Contact />
