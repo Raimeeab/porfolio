@@ -22,6 +22,7 @@ const icons = [
 const styles = {
   displayStyle: {
     display: "flex-row",
+    justifyContent: "center",
   },
   paddingStyle: {
     padding: "0 2px",
@@ -30,13 +31,15 @@ const styles = {
 
 const Footer = () => {
   return (
-    <footer styles={styles.display}>
-      {icons.map((i) => (
-        <a href={i.link} key={i.name} styles={styles.padding}>
-          <i className={i.name}></i>
-        </a>
-      ))}
-    </footer>
+    <div className="d-flex justify-content-center">
+      <footer className="d-flex">
+        {icons.map((i) => (
+          <a href={i.link} key={i.name} style={styles.paddingStyle}>
+            <i className={i.name}></i>
+          </a>
+        ))}
+      </footer>
+    </div>
   );
 };
 
