@@ -1,16 +1,21 @@
-import Routes from './components/Route';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Navigation from './components/Navigation';
-
-import './App.css';
+// import Routes from "./components/Route";
+// import { BrowserRouter as Router } from "react-router-dom";
+// import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import Container from "./components/Container";
+import "./App.css";
 
 function App() {
-  return ( 
-    <Router>
-    <Navigation />
-  {/* Route component will show something different based on where you are */}
-    <Routes />
-    </Router>
+  return (
+    <div>
+      <Container />
+      <Footer />
+      {/* <Router>
+        <Navigation />
+        <Routes />
+      </Router>
+      <Footer /> */}
+    </div>
   );
 }
 

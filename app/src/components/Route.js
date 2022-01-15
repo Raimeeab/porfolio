@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import About from "./About";
 
 // A <Switch> looks through all its children <Route>
 // elements and renders the first one whose path matches the current URL.
@@ -11,7 +12,7 @@ const Routes = () => {
     <Switch>
       <Route exact path="/">
         <h1>This is an about me</h1>
-        {/* <About /> */}
+        <About />
       </Route>
       <Route path="/projects">
         <h1>These are my projects</h1>
