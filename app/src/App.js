@@ -1,20 +1,31 @@
-// import Routes from "./components/Route";
-// import { BrowserRouter as Router } from "react-router-dom";
-// import Navigation from "./components/Navigation";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/Footer";
-import Container from "./components/Container";
+import Header from "./components/Header";
+import About from "./components/About";
+
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <Container />
-      <Footer />
-      {/* <Router>
-        <Navigation />
-        <Routes />
+      <Router>
+      <Header />
+        <Switch>
+          <Route exact path="/">
+            <h1>This is an about me</h1>
+            <About />
+          </Route>
+          <Route path="/projects">
+            <h1>These are my projects</h1>
+            {/* <Projects /> */}
+          </Route>
+          <Route path="/contact">
+            <h1>This is how to contact me</h1>
+            {/* <Contact /> */}
+          </Route>
+        </Switch>
+        <Footer />
       </Router>
-      <Footer /> */}
     </div>
   );
 }

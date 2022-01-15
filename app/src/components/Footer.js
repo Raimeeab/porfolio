@@ -30,13 +30,13 @@ const styles = {
 
 const Footer = () => {
   return (
-    <Footer styles={styles.display}>
+    <footer styles={styles.display}>
       {icons.map((i) => (
         <a href={i.link} key={i.name} styles={styles.padding}>
           <i className={i.name}></i>
         </a>
       ))}
-    </Footer>
+    </footer>
   );
 };
 
