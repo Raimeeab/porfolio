@@ -11,10 +11,11 @@
 }
 
 body {
-  margin: 0;
+  margin: 30px;
   font-family: "Roboto Mono", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif monospace;
+  font-size: large;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-colour);

@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 
 // Font awesome names
 const icons = [
@@ -30,13 +31,17 @@ const styles = {
 };
 
 const Home = () => {
+
+  const flareText = ".is() {"
+  const flareText2 = "}"
   return (
     <div>
-      <h1>
-        raimee<span>.is()</span>
+      <h1 className="text-center pt-20">
+        raimee<span>{flareText}</span>
       </h1>
-      <p>Raimee Abbassi</p>
-      <p>Creative Software Engineer.</p>
+      <p className="text-center" id="fullName"> <span id="const">const</span><span id="vName"> name</span> <span id="equal">=</span> "Raimee Abbassi"</p>
+      <p className="text-center"> function Creative Full Stack Engineer();</p>
+      <p></p>
       <div className="d-flex justify-content-center">
         <div className="d-flex">
           {icons.map((i) => (
