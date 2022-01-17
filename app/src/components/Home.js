@@ -31,13 +31,20 @@ const styles = {
 
 const Home = () => {
   return (
-    <div className="d-flex justify-content-center">
-      <div className="d-flex">
-        {icons.map((i) => (
-          <a href={i.link} key={i.name} style={styles.paddingStyle}>
-            <i className={i.name}></i>
-          </a>
-        ))}
+    <div>
+      <h1>
+        raimee<span>.is()</span>
+      </h1>
+      <p>Raimee Abbassi</p>
+      <p>Creative Software Engineer.</p>
+      <div className="d-flex justify-content-center">
+        <div className="d-flex">
+          {icons.map((i) => (
+            <a href={i.link} key={i.name} style={styles.paddingStyle} target="_blank">
+              <i className={i.name}></i>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

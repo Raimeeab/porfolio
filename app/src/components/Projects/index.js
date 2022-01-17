@@ -5,7 +5,7 @@ import ProjectsArray from "./Projects";
 
 const ProjectCarousel = () => {
   return (
-    <Carousel>
+    <Carousel fade>
       {ProjectsArray.map((project) => (
         <Carousel.Item key={project.id}>
           <img className="d-block w-100" src={project.gif} alt={project.name} />
