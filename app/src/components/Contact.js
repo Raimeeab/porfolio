@@ -1,23 +1,26 @@
-import React from 'react'; 
+import React from "react";
+import Form from "react-bootstrap/Form";
+import Button from 'react-bootstrap/Button'
+import FloatingLabel from "react-bootstrap/esm/FloatingLabel";
 
 const Contact = () => {
-    return ( 
-        <div>
-           <div className="mb-3">
-                <label for="name" className="form-label">Name</label>
-                    <input type="name" className="form-control form-control-sm" id="name" />
-            </div>
-            <div className="mb-3">
-                <label for="email" className="form-label">Email address</label>
-                    <input type="email" className="form-control form-control-sm" id="email" />
-            </div>
-            <div className="mb-3">
-                <label for="enquiry" className="form-label">Enquiry</label>
-                    <textarea className="form-control form-control-sm" id="enquiry" rows="3" placeholder="Get in touch..."></textarea>
-            </div>
-            <input class="btn btn-primary" type="submit" value="Submit"></input>
-        </div>
-    )
-}
+  return (
+    <Form>
+      <h1>Get in touch</h1>
+      <Form.Group className="mb-3" controlId="formGroupName">
+        <FloatingLabel controlId="floatingName" label="Name">
+          <Form.Control type="email" placeholder="name@example.com" />
+        </FloatingLabel>
+        <FloatingLabel controlId="floatingEmail" label="email">
+          <Form.Control type="email" placeholder="email" />
+        </FloatingLabel>
+        <FloatingLabel controlId="floatingInput" label="enquiry">
+          <Form.Control type="textarea" placeholder="enquiry" />
+        </FloatingLabel>
+      </Form.Group>
+      <Button variant="light">Submit</Button>
+    </Form>
+  );
+};
 
 export default Contact;

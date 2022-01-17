@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Footer from "./components/Footer";
+import Home from "./components/Home";
 import Header from "./components/Header";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects/index";
 
 import "./App.css";
 
@@ -14,6 +14,9 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
             <About />
           </Route>
           <Route path="/projects">
@@ -23,7 +26,6 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-        <Footer />
       </Router>
     </div>
   );

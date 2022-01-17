@@ -1,28 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
 
-// About me, projects, Contact
-
-const Navigation = () => {
+const Header = () => {
   return (
-    <div>
-       <h1><span>Raimee Abbassi</span>.is()</h1>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About()</Link>
-        </li>
-        <li>
-          <Link to="/projects">Projects()</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact()</Link>
-        </li>
-      </ul>
-    </div>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand>
+          <Link to="/">Ra</Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="me-auto">
+          <Link to="/">.is()</Link>
+          <Link to="/about">.About()</Link>
+          <Link to="/projects">.Projects()</Link>
+          <Link to="/contact">.Contact()</Link>
+        </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navigation; 
+export default Header;

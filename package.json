@@ -17,7 +17,5 @@
     "url": "https://github.com/Raimeeab/porfolio/issues"
   },
   "homepage": "https://github.com/Raimeeab/porfolio#readme",
-  "dependencies": {
-    "react": "^17.0.2"
-  }
+  "dependencies": {}
 }

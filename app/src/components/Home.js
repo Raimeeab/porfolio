@@ -15,7 +15,7 @@ const icons = [
   {
     // Resume
     name: "far fa-file-pdf",
-    link: "",
+    link: "https://drive.google.com/file/d/1VjtEpchFvZx1x-sDdcQo-A6yF6YXd6lO/view?usp=sharing",
   },
 ];
 
@@ -29,18 +29,18 @@ const styles = {
   },
 };
 
-const Footer = () => {
+const Home = () => {
   return (
     <div className="d-flex justify-content-center">
-      <footer className="d-flex">
+      <div className="d-flex">
         {icons.map((i) => (
           <a href={i.link} key={i.name} style={styles.paddingStyle}>
             <i className={i.name}></i>
           </a>
         ))}
-      </footer>
+      </div>
     </div>
   );
 };
 
-export default Footer;
+export default Home;
