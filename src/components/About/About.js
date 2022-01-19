@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../assets/profile.jpeg";
+import profilePic from "../../assets/profile.jpeg";
 import Accordion from "react-bootstrap/Accordion";
 
 import "./About.css";

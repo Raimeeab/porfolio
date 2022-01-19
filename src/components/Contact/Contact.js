@@ -7,18 +7,18 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="d-flex flex-column justify-content-center">
-      <Form>
+      <Form className="formContainer">
         <h3 className="mt-10 fw-bold text-center">.Contact()</h3>
         <Form.Group className="formGroup" controlId="formGroupName">
           <FloatingLabel
-            className="formLabel my-3"
+            className="formLabel my-2"
             controlId="floatingName"
             label="Name"
           >
             <Form.Control className="formControl" type="email" placeholder="name@example.com" />
           </FloatingLabel>
           <FloatingLabel
-            className="formLabel my-3"
+            className="formLabel my-2"
             controlId="floatingEmail"
             label="email"
           >
@@ -32,7 +32,11 @@ const Contact = () => {
             <Form.Control className="formControl" as="textarea" placeholder="enquiry" />
           </FloatingLabel>
         </Form.Group>
-      <Button variant="light" className="submitBtn btn btn-lg">Submit</Button>
+      <div className="container">
+        <div className="col-md-12 text-center">
+      <Button variant="dark" className="btn-lg submitBtn">Submit</Button>
+        </div>
+    </div>
       </Form>
     </div>
   );

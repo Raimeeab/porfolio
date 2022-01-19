@@ -1,0 +1,12 @@
+.formContainer {
+  padding: 30px 150px;
+}
+
+.formGroup {
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.submitBtn {
+  border-color: #682be9;
+}

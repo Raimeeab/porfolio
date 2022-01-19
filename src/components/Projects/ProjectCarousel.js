@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import ProjectsArray from "./Projects";
 
-import "../Projects.css";
+import "./Projects.css";
 
 const ProjectCarousel = () => {
   return (
@@ -28,6 +28,7 @@ const ProjectCarousel = () => {
                         <a
                           href={project.gitHubLink}
                           target="_blank"
+                          rel="noopener noreferrer"
                           alt="GitHub repository"
                           class="gitHubLink me-2"
                         >
@@ -36,6 +37,7 @@ const ProjectCarousel = () => {
                         <a
                           href={project.projectLink}
                           target="_blank"
+                          rel="noopener noreferrer"
                           alt="Project link"
                           className="projectLink"
                         >

@@ -11,7 +11,7 @@ const Header = () => {
       <Container fluid className="headerContainer">
         <Navbar.Brand>
           <Link to="/"  className="name">raimee</Link>
-          <span className="surname">(abbassi)</span>
+          <span className="surname">Abbassi</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse  className="navBar" id="responsive-navbar-nav">
