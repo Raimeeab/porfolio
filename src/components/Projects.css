@@ -1,7 +1,6 @@
 .projectInfo {
    /* background: rgba(219, 219, 237, 0.653); */
    color: #ffffff;
-   overflow:hidden;
    text-shadow: 0 0 3px #682be9,0 0 3px #682be9;
    display: inline-flex; /* keep the background color wrapped tight */
 }

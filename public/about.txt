@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Akronim
-- Font Author: Copyright (c) 2012 Grzegorz Klimczewski, Fonty.PL (www.fonty.pl), with Reserved Font Name 'Akronim'
-- Font Source: http://fonts.gstatic.com/s/akronim/v12/fdN-9sqWtWZZlHRp-gBxkFYN-a8.ttf
+- Font Title: Source Code Pro
+- Font Author: Â© 2010 - 2020 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name âSourceâ.
+- Font Source: http://fonts.gstatic.com/s/sourcecodepro/v18/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DBKXhM5hTXUcdJg.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

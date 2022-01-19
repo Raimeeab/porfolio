@@ -45,7 +45,7 @@ const About = () => {
         </div>
         <div className="row">
           <div className="col-sm-12 col-md-6">
-            <img src={profilePic} width="100%" className="img-responsive"></img>
+            <img src={profilePic} width="100%" className="img-responsive" alt="Profile"></img>
           </div>
           <div className="col-sm-12 col-md-6">
             <p className="mb-4">

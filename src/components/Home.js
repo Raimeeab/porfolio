@@ -1,5 +1,6 @@
 import React from "react";
-import SyntaxHighlighter from 'react-syntax-highlighter';
+// import SyntaxHighlighter from 'react-syntax-highlighter';
+import Typewriter from "typewriter-effect";
 import "./Home.css";
 
 // Font awesome names
@@ -21,11 +22,6 @@ const icons = [
   },
 ];
 
-const flare =`
-const is = () => {
-  const name = "Raimee Abbassi"
-  creativeSoftwareEngineer();
-};`
 const styles = {
   displayStyle: {
     display: "flex-row",
@@ -37,20 +33,34 @@ const styles = {
 };
 
 const Home = () => {
-
-  // const flareText = ".is() {"
-  // const flareText2 = "}"
-  {/* <h1 className="text-center pt-20">
-    raimee<span>{flareText}</span>
-  </h1>
-  <p className="text-center" id="fullName"> <span id="const">const</span><span id="vName"> name</span> <span id="equal">=</span> "Raimee Abbassi"</p>
-  <p className="text-center"> function Creative Full Stack Engineer();</p> */}
   return (
     <div>
+      <pre className="flare">
+      <Typewriter
+        className="flare pe-50"
+        onInit={(typewriter) => {
+          typewriter
+            .pauseFor(2500)
+            .typeString(
+`const is = () => {
+  let name = "Raimee Abbassi"; 
+  creativeSoftwareEngineer();
+};`)
+            .pauseFor(1000)
+            .start(2000);
+        }}
+      />
+      </pre>
       <div className="d-flex justify-content-center">
         <div className="d-flex">
           {icons.map((i) => (
-            <a href={i.link} key={i.name} style={styles.paddingStyle} target="_blank" className="icons">
+            <a
+              href={i.link}
+              key={i.name}
+              style={styles.paddingStyle}
+              target="_blank"
+              className="icons"
+            >
               <i className={i.name}></i>
             </a>
           ))}
