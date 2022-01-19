@@ -1,32 +1,39 @@
 import React from "react";
 import profilePic from "../assets/profile.jpeg";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
+import Accordion from "react-bootstrap/Accordion";
 
 import "./About.css";
 
 const technicalSkillList = [
-  "Computer Science applied to JavaScript",
-  "jQuery",
-  "Handlebars",
-  "Advanced CSS & HTML5",
-  "Bootstrap & Foundation ",
-  "Command-line fundamentals",
-  "Unit testing and deployment with Jest",
-  "Express.js",
-  "Node",
-  "Inquirer",
-  "GitHub and GitLab applications",
-  "Heroku",
-  "API interactions",
-  "Server-side Developments",
-  "Databases: MySQL & MongoDB",
-  "Sequelize",
-  "Mongoose",
+  { id: 1, name: "Computer Science applied to JavaScript" },
+  { id: 2, name: "jQuery" },
+  { id: 3, name: "Handlebars" },
+  { id: 4, name: "Advanced CSS & HTML5" },
+  { id: 5, name: "Bootstrap & Foundation" },
+  { id: 6, name: "Command-line fundamentals" },
+  { id: 7, name: "Unit testing and deployment with Jest" },
+  { id: 8, name: "Express.js" },
+  { id: 9, name: "Node" },
+  { id: 10, name: "Inquirer" },
+  { id: 11, name: "GitHub and GitLab applications" },
+  { id: 12, name: "Heroku" },
+  { id: 13, name: "API interactions" },
+  { id: 14, name: "Server-side Developments" },
+  { id: 15, name: "Databases: MySQL & MongoDB" },
+  { id: 16, name: "Sequelize" },
+  { id: 17, name: "Mongoose" },
 ];
 
+const education =`  
+Certificate in Full Stack Web Development
+University of Sydney | Sydney NSW
+Theory and application of web development
+
+Bachelor of Media Communications: Marketing And Film Production 01/2018 Notre Dame University | Sydney NSW
+Expected in 02/202`;
+
+
 const About = () => {
-  const showMore = () => {};
 
   return (
     <section>
@@ -38,7 +45,7 @@ const About = () => {
         </div>
         <div className="row">
           <div className="col-sm-12 col-md-6">
-            <img src={profilePic} width="100%" className="img-responsive" ></img>
+            <img src={profilePic} width="100%" className="img-responsive"></img>
           </div>
           <div className="col-sm-12 col-md-6">
             <p className="mb-4">
@@ -49,9 +56,24 @@ const About = () => {
               Proficient in producing and testing code with diverse front- and
               back-end technology resources, specializing in JavaScript and CSS.
             </p>
+            <Accordion className="accordion">
+              <Accordion.Item eventKey="0">
+                <Accordion.Header className="techHeader">Technical Skills</Accordion.Header>
+                <Accordion.Body className="techBody">
+                    {technicalSkillList.map((skills) => (
+                      <pre className="skillItems" key={skills.id}>{skills.name}</pre>
+                    ))}
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header className="edHeader">Education</Accordion.Header>
+                <Accordion.Body>
+                  <pre className="edBody">{education}</pre>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
           </div>
         </div>
-
       </div>
     </section>
   );

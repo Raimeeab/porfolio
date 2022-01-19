@@ -14,7 +14,7 @@ const Header = () => {
           <span className="surname">(abbassi)</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse  className="navBar d-flex justify-content-end" id="responsive-navbar-nav">
+        <Navbar.Collapse  className="navBar" id="responsive-navbar-nav">
         <Nav className="headerNav">
           <Link to="/" className="link">.is()</Link>
           <Link to="/about" className="link">.About()</Link>

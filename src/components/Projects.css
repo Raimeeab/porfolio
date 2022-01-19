@@ -1,10 +1,14 @@
-/* .projectCarousel { 
-    width: 80%;
-    align-items: center;
-} */
+.projectInfo {
+   /* background: rgba(219, 219, 237, 0.653); */
+   color: #ffffff;
+   overflow:hidden;
+   text-shadow: 0 0 3px #682be9,0 0 3px #682be9;
+   display: inline-flex; /* keep the background color wrapped tight */
+}
 
-/* .projectCaption {
-    background-color: var(--shadow-colour);
-    opacity: 25%;
-} */
-
+.gitHubLink, 
+.projectLink { 
+    color: #682be9;
+    text-shadow: none;
+    font-size: larger;
+}

@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="d-flex flex-column justify-content-center">
       <Form>
-        <h3 className="align-center">Get in touch</h3>
+        <h3 className="mt-10 fw-bold text-center">.Contact()</h3>
         <Form.Group className="formGroup" controlId="formGroupName">
           <FloatingLabel
             className="formLabel my-3"
@@ -32,7 +32,7 @@ const Contact = () => {
             <Form.Control className="formControl" as="textarea" placeholder="enquiry" />
           </FloatingLabel>
         </Form.Group>
-      <Button variant="light" className="submitBtn">Submit</Button>
+      <Button variant="light" className="submitBtn btn btn-lg">Submit</Button>
       </Form>
     </div>
   );

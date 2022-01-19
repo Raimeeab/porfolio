@@ -10,7 +10,7 @@ const ProjectCarousel = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="fw-bold text-center">.Projects()</h1>
+            <h1 className="mt-10 fw-bold text-center">.Projects()</h1>
           </div>
           <div className="col-8-md">
             <Carousel fade className="projectCarousel">
@@ -22,16 +22,27 @@ const ProjectCarousel = () => {
                     alt={project.name}
                   />
                   <Carousel.Caption className="projectCaption">
-                    <h3 className="projectName">{project.name}</h3>
-                    <p>
-                      GitHub{" "}
-                      <a href={project.gitHubLink} target="_blank">
-                        repository
-                      </a>
-                    </p>
-                    <p>
-                      Project <a href={project.projectLink}>Link</a>
-                    </p>
+                    <span>
+                      <h3 className="projectInfo me-2">{project.name}</h3>
+                      <p class="projectInfo">
+                        <a
+                          href={project.gitHubLink}
+                          target="_blank"
+                          alt="GitHub repository"
+                          class="gitHubLink me-2"
+                        >
+                          <i className="fab fa-github"></i>
+                        </a>
+                        <a
+                          href={project.projectLink}
+                          target="_blank"
+                          alt="Project link"
+                          className="projectLink"
+                        >
+                          <i class="fas fa-project-diagram"></i>
+                        </a>
+                      </p>
+                    </span>
                   </Carousel.Caption>
                 </Carousel.Item>
               ))}

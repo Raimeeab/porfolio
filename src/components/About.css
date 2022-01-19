@@ -1,3 +1,35 @@
-/* .technicalList {
-    display: flex;
-} */
+.accordion {
+  width: 90%;
+}
+
+.accordion-button, 
+.accordion-button::after,
+.accordion-item:first-of-type .accordion-button,
+button.accordion-button {
+  background: #212529;
+  color: #682be9;
+}
+
+
+.accordion-button:not(.collapsed) {
+    background: #212529;
+    color: #682be9;
+}
+
+
+.accordion-item {
+  border-color: #682be9;
+  background-color: #212529;
+}
+
+.techHeader {
+  color: #682be9;
+}
+
+.techBody {
+  background-color: #212529;
+}
+
+.skillItems {
+    font-size: smaller;
+}
