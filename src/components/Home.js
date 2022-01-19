@@ -1,5 +1,6 @@
 import React from "react";
-import "../App.css";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import "./Home.css";
 
 // Font awesome names
 const icons = [

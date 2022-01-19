@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Projects from "./components/Projects/index";
+import Projects from "./components/Projects/ProjectCarousel";
 
 // import "./App.css";
 
@@ -19,10 +19,10 @@ function App() {
           <Route exact path="/about">
             <About />
           </Route>
-          <Route path="/projects">
+          <Route exact path="/projects">
             <Projects />
           </Route>
-          <Route path="/contact">
+          <Route exact path="/contact">
             <Contact />
           </Route>
         </Switch>

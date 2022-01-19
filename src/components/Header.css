@@ -1,0 +1,50 @@
+/* Header components */
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  /* max-width: 80rem; */
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--highlight-colour);
+  text-decoration: none;
+}
+
+.name:hover {
+  color: var(--highlight-colour);
+}
+
+.surname {
+  opacity: 0;
+  transition: 400ms ease-in-out;
+  margin-left: 1px;
+}
+
+.headerContainer:hover .surname {
+  opacity: 1;
+}
+
+.link {
+  margin-left: 20px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  color: var(--text-colour);
+  line-height: 1;
+  justify-content: flex-end;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.link:hover {
+  color: var(--highlight-colour);
+}
+
+.navBar { 
+   z-index: 1;
+}

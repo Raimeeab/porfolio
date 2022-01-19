@@ -1,0 +1,21 @@
+:root {
+  --highlight-colour: #682be9;
+  --background-colour: #212529;
+  --text-colour: #ffffff;
+  --secondary-text-colour: grey;
+  --shadow-colour: #cccccc;
+}
+
+::selection {
+  background-color: var(--secondary-text-colour);
+  color: var(--highlight-colour);
+}
+
+a {
+  text-decoration: none;
+  color: var(--highlight-colour);
+}
+
+a:hover {
+  color: inherit;
+}

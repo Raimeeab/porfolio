@@ -1,0 +1,22 @@
+Form {
+  width: 90%;
+}
+
+.formGroup {
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.formLabel {
+  color: var(--secondary-text-colour);
+  margin: 5px 0;
+}
+
+/* TODO */
+.formLabel:focus {
+  border: 10px solid var(--highlight-colour);
+}
+
+.formControl {
+    padding: 5px 0;
+}

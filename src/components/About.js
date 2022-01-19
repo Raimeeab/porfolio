@@ -3,7 +3,7 @@ import profilePic from "../assets/profile.jpeg";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
-import "../App.css";
+import "./About.css";
 
 const technicalSkillList = [
   "Computer Science applied to JavaScript",
@@ -29,7 +29,8 @@ const About = () => {
   const showMore = () => {};
 
   return (
-    <div className="about my-5">
+    <div className="about my-5 col-sm-12 col-md-6">
+      <div className="">
       <img src={profilePic} className="w-25 h-25 profile"></img>
       <p>
         Hello, I'm Raimee. Ambitious Junior Software Engineer skilled at
@@ -39,6 +40,8 @@ const About = () => {
         in producing and testing code with diverse front- and back-end
         technology resources, specializing in JavaScript and CSS.
       </p>
+
+      </div>
       <div className="mb-2">
         <DropdownButton
           key="end"
