@@ -4,6 +4,9 @@ import artHouseGif from "../../assets/arthouse-demo.gif";
 import socialNetworkGif from "../../assets/social-network-api.gif";
 import jsQuizGif from "../../assets/quiz-demo.gif";
 import weatherDashboardGif from "../../assets/weather-dashboard-demo.gif";
+import textEditorGif from "../../assets/text-editor-demo.gif";
+import planItGif from "../../assets/plan-it-demo.gif";
+import readMeGen from "../../assets/readme-demo.jpg";
 
 const ProjectsArray = [
     {
@@ -42,6 +45,27 @@ const ProjectsArray = [
       gitHubLink: "https://github.com/Raimeeab/weather-dashboard", 
       gif: weatherDashboardGif, 
       projectLink: "https://raimeeab.github.io/weather-dashboard/"
+    }, 
+    {
+      id: 6, 
+      name: "Text Editor", 
+      gitHubLink: "https://github.com/Raimeeab/text-editor",
+      gif: textEditorGif, 
+      projectLink: "https://peaceful-hamlet-70308.herokuapp.com/"
+    }, 
+    {
+      id: 7, 
+      name: "Plan it Project",
+      gitHubLink: "https://github.com/Raimeeab/Planit", 
+      gif: planItGif, 
+      projectLink: "https://planit-events.herokuapp.com/"
+    }, 
+    {
+      id: 8, 
+      name: "README Generator",
+      gitHubLink: "https://github.com/Raimeeab/readme-generator", 
+      gif: readMeGen, 
+      projectLink: "https://drive.google.com/file/d/1YP7v1FFSAjpAeVFCOypmEXNBaPITdip-/view?usp=sharing"
     }
   ];
 

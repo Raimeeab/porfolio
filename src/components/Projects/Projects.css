@@ -1,13 +1,17 @@
 .projectInfo {
    /* background: rgba(219, 219, 237, 0.653); */
    color: #ffffff;
-   text-shadow: 0 0 3px #682be9,0 0 3px #682be9;
+   text-shadow: 0 0 4px grey,0 0 3px #682be9;
    display: inline-flex; /* keep the background color wrapped tight */
 }
-
-.gitHubLink, 
-.projectLink { 
+ 
+.projectLink, 
+.gitHubLink { 
     color: #682be9;
     text-shadow: none;
     font-size: larger;
+}
+
+.projectLinks:hover {
+    color:grey; 
 }

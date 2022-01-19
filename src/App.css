@@ -17,5 +17,10 @@ a {
 }
 
 a:hover {
-  color: inherit;
+  color: var(--text-colour);
+}
+
+.headerFlare {
+  color: var(--highlight-colour);
+  text-shadow: 0 0 0.9px #682be9, 0 0 0.9px #682be9;
 }

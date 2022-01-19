@@ -3,12 +3,13 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import FloatingLabel from "react-bootstrap/esm/FloatingLabel";
 import "./Contact.css";
+import "../../App.css";
 
 const Contact = () => {
   return (
     <div className="d-flex flex-column justify-content-center">
       <Form className="formContainer">
-        <h3 className="mt-10 fw-bold text-center">.Contact()</h3>
+      <h1 className="mt-10 fw-bold text-center"><span className="headerFlare">.</span>Contact<span className="headerFlare">()</span></h1>
         <Form.Group className="formGroup" controlId="formGroupName">
           <FloatingLabel
             className="formLabel my-2"

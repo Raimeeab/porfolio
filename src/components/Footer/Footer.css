@@ -3,3 +3,7 @@
     font-size: larger;
     margin: .9px;
 }
+
+.icons:hover {
+    color: white;
+}

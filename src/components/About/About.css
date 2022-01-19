@@ -10,7 +10,6 @@ button.accordion-button {
   color: #682be9;
 }
 
-
 .accordion-button:not(.collapsed) {
     background: #212529;
     color: #682be9;
@@ -22,8 +21,12 @@ button.accordion-button {
   background-color: #212529;
 }
 
-.techHeader {
+.techHeader,
+.edHeader {
   color: #682be9;
+  font-weight: bolder;
+  text-shadow: 0 0 .2px #682be9,0 0 .2px #682be9;
+
 }
 
 .techBody {

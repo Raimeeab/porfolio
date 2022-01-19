@@ -10,7 +10,7 @@ const Home = () => {
         className="flare pe-50"
         onInit={(typewriter) => {
           typewriter
-          .pauseFor(2500)
+          .pauseFor(1500)
           .typeString(
 `const is = () => {
   let name = "Raimee Abbassi"; 

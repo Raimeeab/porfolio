@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import ProjectsArray from "./Projects";
 
 import "./Projects.css";
+import "../../App.css";
 
 const ProjectCarousel = () => {
   return (
@@ -10,7 +11,7 @@ const ProjectCarousel = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="mt-10 fw-bold text-center">.Projects()</h1>
+          <h1 className="mt-10 fw-bold text-center"><span className="headerFlare">.</span>Projects<span className="headerFlare">()</span></h1>
           </div>
           <div className="col-8-md">
             <Carousel fade className="projectCarousel">

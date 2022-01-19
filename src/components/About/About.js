@@ -3,6 +3,7 @@ import profilePic from "../../assets/profile.jpeg";
 import Accordion from "react-bootstrap/Accordion";
 
 import "./About.css";
+import "../../App.css";
 
 const technicalSkillList = [
   { id: 1, name: "Computer Science applied to JavaScript" },
@@ -29,8 +30,8 @@ Certificate in Full Stack Web Development
 University of Sydney | Sydney NSW
 Theory and application of web development
 
-Bachelor of Media Communications: Marketing And Film Production 01/2018 Notre Dame University | Sydney NSW
-Expected in 02/202`;
+Bachelor of Media Communications: Marketing & Film
+Notre Dame University | Sydney NSW`;
 
 
 const About = () => {
@@ -40,7 +41,7 @@ const About = () => {
       <div className="container my-2 py-1">
         <div className="row mb-5">
           <div className="col-12">
-            <h1 className="fw bold text-center">.About()</h1>
+          <h1 className="mt-10 fw-bold text-center"><span className="headerFlare">.</span>About<span className="headerFlare">()</span></h1>
           </div>
         </div>
         <div className="row">
@@ -48,7 +49,7 @@ const About = () => {
             <img src={profilePic} width="100%" className="img-responsive" alt="Profile"></img>
           </div>
           <div className="col-sm-12 col-md-6">
-            <p className="mb-4">
+            <p className="mb-4 pt-40">
               Hello, I'm Raimee. Ambitious Junior Software Engineer skilled at
               collaborating with customers, colleagues and project managers in a
               deadline-driven environment where sound work ethic is paramount.
@@ -65,7 +66,7 @@ const About = () => {
                     ))}
                 </Accordion.Body>
               </Accordion.Item>
-              <Accordion.Item eventKey="1">
+              <Accordion.Item defaultEventKey="1">
                 <Accordion.Header className="edHeader">Education</Accordion.Header>
                 <Accordion.Body>
                   <pre className="edBody">{education}</pre>
