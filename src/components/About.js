@@ -29,38 +29,31 @@ const About = () => {
   const showMore = () => {};
 
   return (
-    <div className="about my-5 col-sm-12 col-md-6">
-      <div className="">
-      <img src={profilePic} className="w-25 h-25 profile"></img>
-      <p>
-        Hello, I'm Raimee. Ambitious Junior Software Engineer skilled at
-        collaborating with customers, colleagues and project managers in a
-        deadline-driven environment where sound work ethic is paramount.
-        Well-versed in the complete software development life cycle. Proficient
-        in producing and testing code with diverse front- and back-end
-        technology resources, specializing in JavaScript and CSS.
-      </p>
+    <section>
+      <div className="container my-2 py-1">
+        <div className="row mb-5">
+          <div className="col-12">
+            <h1 className="fw bold text-center">.About()</h1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-12 col-md-6">
+            <img src={profilePic} width="100%" className="img-responsive" ></img>
+          </div>
+          <div className="col-sm-12 col-md-6">
+            <p className="mb-4">
+              Hello, I'm Raimee. Ambitious Junior Software Engineer skilled at
+              collaborating with customers, colleagues and project managers in a
+              deadline-driven environment where sound work ethic is paramount.
+              Well-versed in the complete software development life cycle.
+              Proficient in producing and testing code with diverse front- and
+              back-end technology resources, specializing in JavaScript and CSS.
+            </p>
+          </div>
+        </div>
 
       </div>
-      <div className="mb-2">
-        <DropdownButton
-          key="end"
-          id="dropdown-button-drop-end"
-          drop="end"
-          variant="dark"
-          title="Technical Skills"
-        ></DropdownButton>
-      </div>
-      <div className="mb-2">
-        <DropdownButton
-          key="end"
-          id="dropdown-button-drop-end"
-          drop="end"
-          variant="dark"
-          title="Work Experience"
-        ></DropdownButton>
-      </div>
-    </div>
+    </section>
   );
 };
 

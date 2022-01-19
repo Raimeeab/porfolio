@@ -10,7 +10,7 @@ const ProjectCarousel = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="fw-bold text-center">Featured Projects</h1>
+            <h1 className="fw-bold text-center">.Projects()</h1>
           </div>
           <div className="col-8-md">
             <Carousel fade className="projectCarousel">
