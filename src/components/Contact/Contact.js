@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import FloatingLabel from "react-bootstrap/esm/FloatingLabel";
+import { validateEmail } from "../../utils/validators";
 import "./Contact.css";
 import "../../App.css";
 
@@ -18,10 +19,11 @@ const Contact = () => {
     });
 
     // Check and see if errors exist, and remove them from the error object:
-    if ( !!errors[field] ) setErrors({
-      ...errors,
-      [field]: null
-    })
+    if (!!errors[field])
+      setErrors({
+        ...errors,
+        [field]: null,
+      });
   };
 
   const findFormErrors = () => {
@@ -29,15 +31,16 @@ const Contact = () => {
     const newErrors = {};
 
     // name errors
-    if (!name || name === " ") newErrors.name = "Name field can't be blank";
+    if (!name || name === " ") newErrors.name = "Field is required";
     else if (name.length > 30) newErrors.name = "Name is too long";
 
     // email errors
-    if (!email || email != `^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$`)
-      newErrors.email = "Email is required";
+    if (!email || email === " " || email != `^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$`)
+      newErrors.email = "Field is required";
 
     // enquiry erros
-    if (!enquiry || enquiry === " ") newErrors.enquiry = "Enquiry is required";
+    if (!enquiry || enquiry === " " ) newErrors.enquiry = "Field is required"
+    else if (enquiry.length > 10 ) newErrors.enquiry = "Please specify enquiry a little further";
 
     return newErrors;
   };
@@ -58,7 +61,7 @@ const Contact = () => {
 
   return (
     <div className="d-flex flex-column justify-content-center">
-      <Form className="formContainer">
+      <Form className="formContainer" onSubmit={handleSubmit}>
         <h1 className="mt-10 fw-bold text-center">
           <span className="headerFlare">.</span>Contact
           <span className="headerFlare">()</span>
@@ -114,7 +117,6 @@ const Contact = () => {
         </Form.Group>
         <div className="container">
           <div className="col-md-12 text-center">
-            
             <Button variant="dark" className="btn-lg submitBtn" type="submit">
               Submit
             </Button>
