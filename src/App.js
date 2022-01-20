@@ -28,7 +28,7 @@ function App() {
             <Contact />
           </Route>
           <Route>
-            <Resume />
+            <Resume exact path="/resume"/>
           </Route>
         </Switch>
         <Footer />
