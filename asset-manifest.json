@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-porfolio/static/css/main.5a885f6c.css",
-    "main.js": "/react-porfolio/static/js/main.25aae94a.js",
-    "static/media/plan-it-demo.gif": "/react-porfolio/static/media/plan-it-demo.5ccf2281ae2136f406cc.gif",
-    "static/media/weather-dashboard-demo.gif": "/react-porfolio/static/media/weather-dashboard-demo.768c76ff77d2555ee478.gif",
-    "static/media/arthouse-demo.gif": "/react-porfolio/static/media/arthouse-demo.1de4fc99800d3382f944.gif",
-    "static/media/social-network-api.gif": "/react-porfolio/static/media/social-network-api.8c80283d22c349b900c0.gif",
-    "static/media/text-editor-demo.gif": "/react-porfolio/static/media/text-editor-demo.dc9a18a1c4edeee737a0.gif",
-    "static/media/employee-tracker.gif": "/react-porfolio/static/media/employee-tracker.1fad9d2a14274f8f7805.gif",
-    "static/media/avatar.png": "/react-porfolio/static/media/avatar.945695d162cb5a990def.png",
-    "static/media/quiz-demo.gif": "/react-porfolio/static/media/quiz-demo.0c37659494574165bb8a.gif",
-    "index.html": "/react-porfolio/index.html",
-    "main.5a885f6c.css.map": "/react-porfolio/static/css/main.5a885f6c.css.map",
-    "main.25aae94a.js.map": "/react-porfolio/static/js/main.25aae94a.js.map"
+    "main.css": "/react-portfolio/static/css/main.5a885f6c.css",
+    "main.js": "/react-portfolio/static/js/main.38392fcc.js",
+    "static/media/plan-it-demo.gif": "/react-portfolio/static/media/plan-it-demo.5ccf2281ae2136f406cc.gif",
+    "static/media/weather-dashboard-demo.gif": "/react-portfolio/static/media/weather-dashboard-demo.768c76ff77d2555ee478.gif",
+    "static/media/arthouse-demo.gif": "/react-portfolio/static/media/arthouse-demo.1de4fc99800d3382f944.gif",
+    "static/media/social-network-api.gif": "/react-portfolio/static/media/social-network-api.8c80283d22c349b900c0.gif",
+    "static/media/text-editor-demo.gif": "/react-portfolio/static/media/text-editor-demo.dc9a18a1c4edeee737a0.gif",
+    "static/media/employee-tracker.gif": "/react-portfolio/static/media/employee-tracker.1fad9d2a14274f8f7805.gif",
+    "static/media/avatar.png": "/react-portfolio/static/media/avatar.945695d162cb5a990def.png",
+    "static/media/quiz-demo.gif": "/react-portfolio/static/media/quiz-demo.0c37659494574165bb8a.gif",
+    "index.html": "/react-portfolio/index.html",
+    "main.5a885f6c.css.map": "/react-portfolio/static/css/main.5a885f6c.css.map",
+    "main.38392fcc.js.map": "/react-portfolio/static/js/main.38392fcc.js.map"
   },
   "entrypoints": [
     "static/css/main.5a885f6c.css",
-    "static/js/main.25aae94a.js"
+    "static/js/main.38392fcc.js"
   ]
 }
