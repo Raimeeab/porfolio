@@ -2,19 +2,21 @@ import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 import Button from "react-bootstrap/Button";
 
+import "./Resume.css";
 import "../../App.css";
 const Resume = () => {
-  //   const technicalBackEnd = [
-  //     { id: 1, name: "Node" },
-  //     { id: 2, name: "Express.js" },
-  //     { id: 3, name: "Inquirer" },
-  //     { id: 4, name: "Server-side Developments" },
-  //     { id: 5, name: "API interactions" },
-  //     { id: 6, name: "Databases: MySQL & MongoDB" },
-  //     { id: 7, name: "Sequelize" },
-  //     { id: 8, name: "Mongoose" },
-  //     { id: 9, name: "PWAs" },
-  //   ];
+  const technicalBackEnd = [
+    { id: 1, name: "Nodejs" },
+    { id: 2, name: "Express.js" },
+    { id: 3, name: "Inquirer" },
+    { id: 4, name: "Server-side Developments" },
+    { id: 5, name: "API interactions" },
+    { id: 6, name: "Databases: MySQL & MongoDB" },
+    { id: 7, name: "Sequelize" },
+    { id: 8, name: "Mongoose" },
+    { id: 9, name: "PWAs" },
+    { id: 10, name: "User Authentication" },
+  ];
 
   const technicalFrontEnd = [
     { id: 1, name: "Computer Science applied to JavaScript" },
@@ -26,6 +28,7 @@ const Resume = () => {
     { id: 7, name: "Unit testing and deployment with Jest" },
     { id: 8, name: "GitHub and GitLab applications" },
     { id: 9, name: "Heroku" },
+    { id: 10, name: "React.js" },
   ];
 
   return (
@@ -37,57 +40,77 @@ const Resume = () => {
             <span className="headerFlare">()</span>
           </h1>
         </div>
-        <div className="row mb-5 pt-20">
-          <h2 className="text-center">Education</h2>
+        <div className="row mb-5">
+          <h2 className="text-center resumeHeader">Education</h2>
           <div className="col-sm-12 col-md-6 p-20">
-            <p className="text-center">
-              Certificate in Full Stack Web Development <br />
-              University of Sydney | Sydney NSW <br /> Theory and application of
-              web development
-            </p>
+            <div className="text-center edTitle">
+              Certificate in Full Stack Web Development
+            </div>
+            <div className="text-center edLocation">University of Sydney | Sydney NSW</div>
+            <div className="text-center edDesc">
+              Theory and application of web development
+            </div>
           </div>
           <div className="col-sm-12 col-md-6">
-            <p className="text-center">
-              Bachelor of Media Communications <br /> Notre Dame University |
-              Sydney NSW <br /> Double major in Marketing & Film Production
-            </p>
+            <div className="text-center edTitle">
+              Bachelor of Media Communications
+            </div>
+            <div className="text-center edLocation">
+              Notre Dame University | Sydney NSW
+            </div>
+            <div className="text-center edDesc">
+              Double major in Marketing & Film Production
+            </div>
           </div>
         </div>
         <div className="row mb-5 pt-10">
-          <h2 className="text-center">Technical Skills</h2>
+          <h2 className="text-center resumeHeader">Technical Skills</h2>
           <div className="col-sm-12 col-md-6">
             <ListGroup variant="flush">
               {technicalFrontEnd.map((skills) => {
-                <ListGroup.Item className="skillItems" key={skills.id} >
-                  {skills.name}
-                </ListGroup.Item>;
+                return (
+                  <ListGroup.Item
+                    className="skillItems text-center"
+                    key={skills.id}
+                  >
+                    {skills.name}
+                  </ListGroup.Item>
+                );
+              })}
+            </ListGroup>
+          </div>
+          <div className="col-sm-12 col-md-6">
+            <ListGroup variant="flush">
+              {technicalBackEnd.map((skills) => {
+                return (
+                  <ListGroup.Item
+                    className="skillItems text-center"
+                    key={skills.id}
+                  >
+                    {skills.name}
+                  </ListGroup.Item>
+                );
               })}
             </ListGroup>
           </div>
         </div>
-        <Button variant="outline-primary" size="lg">
-              Download Resume
-        </Button>
+        <div className="container">
+          <div className="col-md-12 text-center">
+            <Button variant="dark" className="btn-lg submitBtn ml-20">
+              <a
+                href="https://drive.google.com/file/d/1VjtEpchFvZx1x-sDdcQo-A6yF6YXd6lO/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <i className="far fa-file-pdf"></i> Resume
+              </a>
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Resume;
-
-// <Accordion className="accordion">
-//                   <Accordion.Item defaulteventkey="0">
-
-//                   </Accordion.Item>
-//               </Accordion>
-
-{/* <div className="col-sm-12 col-md-6">
-  <h3>Technical Skills</h3>
-  <ListGroup variant="flush">
-    {technicalFrontEnd.map((skills) => {
-      <ListGroup.Item className="skillItems" key={skills.id}>
-        {skills.name}
-      </ListGroup.Item>;
-    })}
-  </ListGroup>
-</div>; */}

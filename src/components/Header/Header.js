@@ -19,8 +19,8 @@ const Header = () => {
           <Link to="/" className="link">.is()</Link>
           <Link to="/about" className="link">.About()</Link>
           <Link to="/projects" className="link">.Projects()</Link>
-          <Link to="/contact" className="link">.Contact()</Link>
           <Link to="/resume" className="link">.Resume()</Link>
+          <Link to="/contact" className="link">.Contact()</Link>
         </Nav>
         </Navbar.Collapse>
       </Container>
