@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/ProjectCarousel";
+import Resume from "./components/Resume/Resume";
 import Footer from "./components/Footer/Footer";
 
 // import "./App.css";
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact />
+          </Route>
+          <Route>
+            <Resume />
           </Route>
         </Switch>
         <Footer />

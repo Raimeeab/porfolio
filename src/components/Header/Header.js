@@ -20,6 +20,7 @@ const Header = () => {
           <Link to="/about" className="link">.About()</Link>
           <Link to="/projects" className="link">.Projects()</Link>
           <Link to="/contact" className="link">.Contact()</Link>
+          <Link to="/resume" className="link">.Resume()</Link>
         </Nav>
         </Navbar.Collapse>
       </Container>

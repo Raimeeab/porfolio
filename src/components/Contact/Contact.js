@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import FloatingLabel from "react-bootstrap/esm/FloatingLabel";
-import { validateEmail } from "../../utils/validators";
 import "./Contact.css";
 import "../../App.css";
 
@@ -35,12 +34,12 @@ const Contact = () => {
     else if (name.length > 30) newErrors.name = "Name is too long";
 
     // email errors
-    if (!email || email === " " || email != `^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$`)
+    if (!email || email === " " || RegExp(`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`).test(email))
       newErrors.email = "Field is required";
 
     // enquiry erros
     if (!enquiry || enquiry === " " ) newErrors.enquiry = "Field is required"
-    else if (enquiry.length > 10 ) newErrors.enquiry = "Please specify enquiry a little further";
+
 
     return newErrors;
   };
