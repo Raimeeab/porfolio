@@ -7,11 +7,14 @@ import "../../App.css";
 
 const ProjectCarousel = () => {
   return (
-    <section>
-      <div className="container">
+    <section className="projectSection">
+      <div className="container projectContainer">
         <div className="row">
           <div className="col-12">
-          <h1 className="mt-10 fw-bold text-center"><span className="headerFlare">.</span>Projects<span className="headerFlare">()</span></h1>
+            <h1 className="mt-10 fw-bold text-center projectHeader">
+              <span className="headerFlare">.</span>Projects
+              <span className="headerFlare">()</span>
+            </h1>
           </div>
           <div className="col-8-md">
             <Carousel fade className="projectCarousel">

@@ -1,17 +1,50 @@
-.projectInfo {
-   /* background: rgba(219, 219, 237, 0.653); */
-   color: #ffffff;
-   text-shadow: 0 0 4px grey,0 0 3px #682be9;
-   display: inline-flex; /* keep the background color wrapped tight */
+.projectHeader {
+  padding-bottom: 30px;
 }
- 
-.projectLink, 
-.gitHubLink { 
-    color: #682be9;
-    text-shadow: none;
-    font-size: larger;
+.projectContainer {
+  width: 900px;
+  height: 500px;
+  margin: auto;
+}
+
+.projectInfo {
+  /* background: rgba(219, 219, 237, 0.653); */
+  color: #ffffff;
+  text-shadow: 0 0 4px grey, 0 0 3px #682be9;
+  display: inline-flex; /* keep the background color wrapped tight */
+}
+
+.projectLink,
+.gitHubLink {
+  color: #682be9;
+  text-shadow: none;
+  font-size: larger;
+}
+
+.navbar-toggler {
+  z-index: 1;
 }
 
 .projectLinks:hover {
-    color:grey; 
+  color: grey;
+}
+
+@media (max-width: 965px) {
+  .projectSection {
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: auto;
+    height: auto;
+  }
+
+  .projectInfo,
+  .gitHubLink,
+  .projectLink {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
 }

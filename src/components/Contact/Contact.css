@@ -1,5 +1,5 @@
 .formContainer {
-  padding: 30px 150px;
+  padding: 30px 200px;
 }
 
 .formGroup {
@@ -13,4 +13,16 @@
 
 .formLabel {
   color: black;
+}
+
+@media (min-width: 500px) {
+  .formContainer {
+    padding: 30px 200px;
+  }
+}
+
+@media (max-width: 414px) {
+  .formContainer {
+    padding: 0;
+  }
 }

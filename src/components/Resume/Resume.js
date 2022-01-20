@@ -46,7 +46,9 @@ const Resume = () => {
             <div className="text-center edTitle">
               Certificate in Full Stack Web Development
             </div>
-            <div className="text-center edLocation">University of Sydney | Sydney NSW</div>
+            <div className="text-center edLocation">
+              University of Sydney | Sydney NSW
+            </div>
             <div className="text-center edDesc">
               Theory and application of web development
             </div>

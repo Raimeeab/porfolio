@@ -29,28 +29,29 @@ const Contact = () => {
     const { name, email, enquiry } = form;
     const newErrors = {};
 
-    // name errors
+    // Name errors
     if (!name || name === " ") newErrors.name = "Field is required";
     else if (name.length > 30) newErrors.name = "Name is too long";
 
-    // email errors
-    if (!email || email === " " || RegExp(`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`).test(email))
+    // Email errors
+    if (
+      !email ||
+      email === " " ||
+      RegExp(`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`).test(email)
+    )
       newErrors.email = "Field is required";
 
-    // enquiry erros
-    if (!enquiry || enquiry === " " ) newErrors.enquiry = "Field is required"
-
+    // Enquiry erros
+    if (!enquiry || enquiry === " ") newErrors.enquiry = "Field is required";
 
     return newErrors;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // get our new errors
     const newErrors = findFormErrors();
     // Conditional logic:
     if (Object.keys(newErrors).length > 0) {
-      // We got errors!
       setErrors(newErrors);
     } else {
       // No errors - checks if object has any key-value pairs

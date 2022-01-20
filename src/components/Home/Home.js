@@ -6,20 +6,21 @@ const Home = () => {
   return (
     <div>
       <pre className="flare">
-      <Typewriter
-        className="flare pe-50"
-        onInit={(typewriter) => {
-          typewriter
-          .pauseFor(1500)
-          .typeString(
+        <Typewriter
+          className="flare pe-50"
+          onInit={(typewriter) => {
+            typewriter
+              .pauseFor(1500)
+              .typeString(
 `const is = () => {
   let name = "Raimee Abbassi"; 
   creativeSoftwareEngineer();
-};`)
-            .pauseFor(1000)
-            .start(2000);
-        }}
-      />
+};`
+              )
+              .pauseFor(1000)
+              .start(2000);
+          }}
+        />
       </pre>
     </div>
   );

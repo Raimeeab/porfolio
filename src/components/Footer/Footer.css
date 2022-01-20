@@ -1,18 +1,18 @@
-
 .footerContainer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
+
 .icons {
-    color: #682be9;
-    font-size: larger;
-    margin: .9px;
+  color: #682be9;
+  font-size: larger;
+  margin: 0.9px;
 }
 
 .icons:hover {
-    color: white;
+  color: white;
 }
 
 .year {
-    color: #682be9; 
-    padding-left: 5px;
+  color: #682be9;
+  padding-left: 5px;
 }

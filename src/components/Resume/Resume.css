@@ -1,24 +1,24 @@
 .skillItems {
-    background-color: #212529;
-    color: #ffffff;
+  background-color: #212529;
+  color: #ffffff;
 }
 
 .resumeHeader {
-    color: #682be9;
-    padding-top: 70px;
-    padding-bottom: 15px;
+  color: #682be9;
+  padding-top: 70px;
+  padding-bottom: 15px;
 }
 
 .edTitle {
-    font-size: larger;
-    font-weight: bolder;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 .edLocation {
-    font-style: italic;
+  font-style: italic;
 }
 
 .edDisc {
-    font-weight: lighter;
-    font-size: smaller;
+  font-weight: lighter;
+  font-size: smaller;
 }

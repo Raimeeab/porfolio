@@ -8,6 +8,12 @@
   margin: 0 auto;
 }
 
+.headerNav,
+.navbar-nav {
+  z-index: 2;
+  background: rgba(33, 37, 41, 0.2);
+}
+
 .name {
   font-size: 1.2rem;
   font-weight: 700;
@@ -37,19 +43,19 @@
   display: flex;
   align-items: center;
   color: var(--text-colour);
-  text-shadow: 0 0 0.9px white,0 0 0.9px white;
+  text-shadow: 0 0 0.9px white, 0 0 0.9px white;
   line-height: 1;
   justify-content: flex-end;
   text-decoration: none;
   font-weight: bolder;
+  z-index: 2;
 }
 
 .link:hover {
   color: var(--highlight-colour);
-  text-shadow: 0 0 0.9px #682be9,0 0 0.9px #682be9;
-
+  text-shadow: 0 0 0.9px #682be9, 0 0 0.9px #682be9;
 }
 
-.navBar { 
-   z-index: 1;
+.navBar {
+  z-index: 1;
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import avatar from "../../assets/avatar.png"
 
-import "./About.css";
 import "../../App.css";
 
 const About = () => {
