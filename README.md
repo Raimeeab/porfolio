@@ -30,9 +30,17 @@ Link to the [site](https://raimeeab.github.io/react-porfolio/)
 
 ## 🕹 Technologies used
 
+- JavaScript
+- Reactjs
+- Nodejs
+- Bootstrap
+- Advanced CSS
+- Typewriter-effect
+
 <a name="usage"></a>
 
 ## 🖥 Usage
+The navigation links will take you to different pages of my portfolio, including my resume and ways to get in touch with me. 
 
 <a name="contributors"></a>
 
