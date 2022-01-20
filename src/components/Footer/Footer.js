@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <section className="container">
       <div className="row mb-5">
-        <div className="col-12 ">
+        <div className="col-12 footerContainer">
           <h6 className=" d-flex justify-content-center">
             &copy; Raimee Abbassi <span className="year">[2022]</span>
           </h6>

@@ -16,7 +16,7 @@
 
 ### Demo
 
-![main-demo]()
+![main-demo](src/assets/demo.gif)
 
 <a name="description"></a>
 
