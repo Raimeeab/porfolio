@@ -1,5 +1,6 @@
 import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
+import Button from "react-bootstrap/Button";
 
 import "../../App.css";
 const Resume = () => {
@@ -36,9 +37,9 @@ const Resume = () => {
             <span className="headerFlare">()</span>
           </h1>
         </div>
-        <div className="row mb-5 pt-10">
+        <div className="row mb-5 pt-20">
           <h2 className="text-center">Education</h2>
-          <div className="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-6 p-20">
             <p className="text-center">
               Certificate in Full Stack Web Development <br />
               University of Sydney | Sydney NSW <br /> Theory and application of
@@ -57,13 +58,16 @@ const Resume = () => {
           <div className="col-sm-12 col-md-6">
             <ListGroup variant="flush">
               {technicalFrontEnd.map((skills) => {
-                <ListGroup.Item className="skillItems">
-                  {skills.length}
+                <ListGroup.Item className="skillItems" key={skills.id} >
+                  {skills.name}
                 </ListGroup.Item>;
               })}
             </ListGroup>
           </div>
         </div>
+        <Button variant="outline-primary" size="lg">
+              Download Resume
+        </Button>
       </div>
     </div>
   );
