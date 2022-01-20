@@ -25,13 +25,13 @@ const ProjectCarousel = () => {
                   <Carousel.Caption className="projectCaption">
                     <span>
                       <h3 className="projectInfo me-2">{project.name}</h3>
-                      <p class="projectInfo">
+                      <p className="projectInfo">
                         <a
                           href={project.gitHubLink}
                           target="_blank"
                           rel="noopener noreferrer"
                           alt="GitHub repository"
-                          class="gitHubLink me-2"
+                          className="gitHubLink me-2"
                         >
                           <i className="fab fa-github"></i>
                         </a>
@@ -42,7 +42,7 @@ const ProjectCarousel = () => {
                           alt="Project link"
                           className="projectLink"
                         >
-                          <i class="fas fa-project-diagram"></i>
+                          <i className="fas fa-project-diagram"></i>
                         </a>
                       </p>
                     </span>

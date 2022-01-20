@@ -66,7 +66,7 @@ const About = () => {
                     ))}
                 </Accordion.Body>
               </Accordion.Item>
-              <Accordion.Item defaultEventKey="1">
+              <Accordion.Item defaulteventkey="1">
                 <Accordion.Header className="edHeader">Education</Accordion.Header>
                 <Accordion.Body>
                   <pre className="edBody">{education}</pre>
