@@ -6,3 +6,18 @@
   align-items:center;
   min-height:75vh;
 }
+
+@media (max-width: 780px) {
+  .flare {
+    min-height: 55vh;
+    font-size: 25px;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .flare {
+    min-height: 45vh;
+    font-size: 15px;
+  }
+}
