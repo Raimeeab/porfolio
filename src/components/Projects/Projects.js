@@ -6,6 +6,7 @@ import jsQuizGif from "../../assets/quiz-demo.gif";
 import weatherDashboardGif from "../../assets/weather-dashboard-demo.gif";
 import textEditorGif from "../../assets/text-editor-demo.gif";
 import planItGif from "../../assets/plan-it-demo.gif";
+import habitualGif from "../../assets/habitual-demo.gif";
 
 const ProjectsArray = [
     {
@@ -58,6 +59,13 @@ const ProjectsArray = [
       gitHubLink: "https://github.com/Raimeeab/Planit", 
       gif: planItGif, 
       projectLink: "https://planit-events.herokuapp.com/"
+    },
+    {
+      id: 8, 
+      name: "Habitual", 
+      gitHubLink: "https://github.com/Raimeeab/habitual", 
+      gif: habitualGif, 
+      projectLink: "https://habitual-ra.herokuapp.com/"
     }
   ];
 
