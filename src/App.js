@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
@@ -15,23 +15,13 @@ function App() {
       <Router basename="/raimee-portfolio">
       {/* <Router basename="/react-portfolio"> */}
         <Header />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/projects">
-            <Projects />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
-          <Route>
-            <Resume exact path="/resume"/>
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects"  element={<Projects />}/>
+          <Route path="/contact"  element={<Contact />}/ >
+          <Route path="/resume" element={<Resume />}/ >
+        </Routes>
         <Footer />
       </Router>
     </div>
