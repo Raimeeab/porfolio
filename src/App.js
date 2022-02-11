@@ -13,6 +13,7 @@ function App() {
   return (
     <div>
       <Router basename="/raimee-portfolio">
+      {/* <Router basename="/react-portfolio"> */}
         <Header />
         <Switch>
           <Route exact path="/">
