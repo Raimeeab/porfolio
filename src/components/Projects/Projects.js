@@ -7,6 +7,7 @@ import weatherDashboardGif from "../../assets/weather-dashboard-demo.gif";
 import textEditorGif from "../../assets/text-editor-demo.gif";
 import planItGif from "../../assets/plan-it-demo.gif";
 import habitualGif from "../../assets/habitual-demo.gif";
+import BookSearchGif from "../../assets/MERN-demo.gif"
 
 const ProjectsArray = [
     {
@@ -66,6 +67,13 @@ const ProjectsArray = [
       gitHubLink: "https://github.com/Raimeeab/habitual", 
       gif: habitualGif, 
       projectLink: "https://habitual-ra.herokuapp.com/"
+    }, 
+    {
+      id: 9, 
+      name: "Google Book Search Engine", 
+      gitHubLink: "https://github.com/Raimeeab/find-a-book", 
+      gif: BookSearchGif, 
+      projectLink: "https://murmuring-cliffs-97831.herokuapp.com/"
     }
   ];
 
